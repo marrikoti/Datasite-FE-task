@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Datasite-FE-APP.iml" filepath="$PROJECT_DIR$/.idea/Datasite-FE-APP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Datasite-FE-TASK.iml" filepath="$PROJECT_DIR$/.idea/Datasite-FE-TASK.iml" />
     </modules>
   </component>
 </project>
