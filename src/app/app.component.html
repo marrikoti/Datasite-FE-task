@@ -1,0 +1,44 @@
+<h1 class="text-center">Users Task</h1>
+<div class="px-5">
+  <div class="row btn-users">
+    <div *ngIf="!showControls.showRegistered" class="col-12 py-3 text-center">
+      <button class="btn btn-primary" (click)="showControls.showRegistered = true">Show Registered Users</button>
+    </div>
+    <div *ngIf="showControls.showRegistered" class="col-12 py-3">
+      <h2>Registered Users
+        <button mat-button class="btn btn-primary float-right" (click)="showControls.showRegistered = false">Hide Registered Users</button></h2>
+      <app-registered-users></app-registered-users>
+    </div>
+  </div>
+
+  <div class="row btn-users">
+    <div *ngIf="!showControls.showUnregistered" class="col-12 py-3 text-center">
+      <button class="btn btn-primary" (click)="showControls.showUnregistered = true">Show Unregistered Users</button>
+    </div>
+    <div *ngIf="showControls.showUnregistered" class="col-12 py-3">
+      <h2>Unregistered Users
+        <button class="btn btn-primary float-right" (click)="showControls.showUnregistered = false">Hide Unregistered Users</button></h2>
+        <app-unregistered-users></app-unregistered-users>
+    </div>
+  </div>
+  <div class="row btn-users">
+    <div *ngIf="!showControls.showProjects" class="col-12 py-3 text-center">
+      <button class="btn btn-primary" (click)="showControls.showProjects = true">Show Project User Relationship</button>
+    </div>
+    <div *ngIf="showControls.showProjects" class="col-12 py-3">
+      <h2>Project User Relationship
+        <button class="btn btn-primary float-right" (click)="showControls.showProjects = false">Hide Project User Relationship</button></h2>
+        <app-project-membership></app-project-membership>
+    </div>
+  </div>
+  <div class="row btn-users">
+    <div *ngIf="!showControls.showTotal" class="col-12 py-3 text-center">
+      <button class="btn btn-primary" (click)="showControls.showTotal = true">Show Total Users</button>
+    </div>
+    <div *ngIf="showControls.showTotal" class="col-12 py-3">
+      <h2>Total Users
+        <button class="btn btn-primary float-right" (click)="showControls.showTotal = false">Hide Total Users</button></h2>
+        <app-total-users></app-total-users>
+    </div>
+  </div>
+</div>
